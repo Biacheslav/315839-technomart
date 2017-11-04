@@ -22,11 +22,11 @@
               ведет, а вторая осуществляет выход из аккаунта
               а пока иконки не подгружены, -->
               <a class="profile-link" href="#">
-                <img src="profile-icon.png" width="10" height="10" alt="Иконка профиля">
+                <img src="img/profile-icon.png" width="10" height="10" alt="Иконка профиля">
               </a>
               <b>Равшан Джамшутович</b>
               <a class="profile-link" href="#">
-                <img src="logout-icon.png" width="10" height="10" alt="Иконка выхода">
+                <img src="img/logout-icon.png" width="10" height="10" alt="Иконка выхода">
               </a>
             </p>
             <ul class="user-navigation">
@@ -48,6 +48,157 @@
         </nav>
       </div>
     </header>
-
+    <main>
+      <div class="container">
+        <nav class="bread-crumbs">
+          <ul class="sections-navigation">
+            <li>
+              <a class="homepage" href="#">
+                <img src="img/homepage.pic" width="10" height="10" alt="Вернуться на главную">
+              </a>
+            </li>
+            <li><a href="#">каталог</a></li>
+            <li><a href="#">инструмент</a></li>
+            <li><a href="#">перфораторы</a></li>
+          </ul>
+        </nav>
+        <h1 class="page-name">перфораторы</h1>
+        <section class="filters">
+          <span>фильтр:</span>
+          <form class="parameters" oninput="">
+            <div class="price">
+              <b>цена:</b>
+              <input type="range" id="price-range" name="price-range" min="0" max="30000" step="5">
+              <output name="min-price">0</output> -
+              <output name="max-price">30000</output>
+            </div>
+            <div class="manufacturers">
+              <b>производители:</b>
+              <input type="checkbox" id="bosch" name="bosch" checked>
+              <label for="bosch">bosch</label>
+              <input type="checkbox" id="interskol" name="interskol">
+              <label for="interskol">интерскол</label>
+              <input type="checkbox" id="makita" name="makita" checked>
+              <label for="makita">makita</label>
+              <input type="checkbox" id="dewalt" name="dewalt">
+              <label for="dewalt">dewalt</label>
+              <input type="checkbox" id="hitachi" name="hitachi">
+              <label for="hitachi">hitachi</label>
+            </div>
+            <div class="power">
+              <b>питание:</b>
+              <input type="radio" id="battery " name="power-type" value="battery" checked>
+              <label for="battery ">аккумуляторные</label>
+              <input type="radio" id="utility" name="power-type" value="utility">
+              <label for="utility">сетевые</label>
+            </div>
+            <button type="submit">показать</button>
+          </form>
+        </section>
+        <section class="filtered-goods">
+          <div class="sorting">
+            <b>сортировка:</b>
+            <ul class="types-of-sorting">
+              <li>по цене</li>
+              <li>по типу</li>
+              <li>по функционалу</li>
+              <li><img src="img/increase.png" width="10" height="10" alt="по возрастанию"></li>
+              <li><img src="img/decrease.png" width="10" height="10" alt="по убыванию"></li>
+            </ul>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg3000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 3000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 3000</span></a>
+              <span class="old-price">22500 р.</span>
+              <span class="btn new-price">15500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg6000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 6000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 6000</span></a>
+              <span class="old-price">30500 р.</span>
+              <span class="btn new-price">25500 р.</span>
+            </article>
+            <article class="goods-item">
+              <!-- <a href="#"><img src="img/bfg2000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 2000"></a> -->
+              <a class="btn buy-btn" href="#">купить</a>
+              <button type="button" class="btn bookmarks-btn">в закладки</button>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 2000</span></a>
+              <!-- <span class="old-price">30500 р.</span> -->
+              <span class="btn new-price">12500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg3000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 3000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 3000</span></a>
+              <span class="old-price">22500 р.</span>
+              <span class="btn new-price">15500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg6000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 6000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 6000</span></a>
+              <span class="old-price">30500 р.</span>
+              <span class="btn new-price">25500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg2000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 2000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 2000</span></a>
+              <!-- <span class="old-price">32500 р.</span> -->
+              <span class="btn new-price">12500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg3000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 3000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 3000</span></a>
+              <span class="old-price">22500 р.</span>
+              <span class="btn new-price">15500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg6000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 6000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 6000</span></a>
+              <span class="old-price">30500 р.</span>
+              <span class="btn new-price">25500 р.</span>
+            </article>
+            <article class="goods-item">
+              <a href="#"><img src="img/bfg2000.png" width="150" height="100"
+              alt="Перфоратор BOSCH BFG 2000"></a>
+              <a href="#"><span class="item-name">Перфоратор
+                BOSCH BFG 2000</span></a>
+              <!-- <span class="old-price">32500 р.</span> -->
+              <span class="btn new-price">12500 р.</span>
+            </article>
+            <ul class="paginator">
+              <li class="paginator-item"><a href="#">1</a></li>
+              <li class="paginator-item"><a href="#">2</a></li>
+              <li class="paginator-item"><a href="#">3</a></li>
+              <li class="paginator-item"><a href="#">следующая</a></li>
+            </ul>
+          </div>
+        </section>
+        <article class="about-punchers">
+          <h1>пара слов о перфораторах</h1>
+          <p>Перфоратор - универсальный строительный инструмент.
+          Прдназначен для сверления и долбления отверстий в кирпиче,
+          бетоне и камне. Существуют лектромеханические и
+          пневматические перфораторы. Современные модели могут
+          выполнять функции дрели, шуруповерта, и отбойного молотка.
+          В ассортиментном ряду есть выбор "трехрежимников":
+          в одном устройстве будут совмещены отбойный молоток и
+          ударная дрель.</p>
+        </article>
+      </div>
+    </main>
   </body>
 </html>
