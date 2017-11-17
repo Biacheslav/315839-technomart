@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&ampPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,8 +13,8 @@
         <div class="container">
           <a class="logo" href="index.html"><img src="img/logo.png" alt="Техномарт"></a>
           <form class="main-header-search" method="get" action="echo.htmlacademy.ru">
-            <label class="visually-hidden search-label">Поиск товара</label>
-            <input type="search" name="search" placeholder="Поиск">
+            <label class="search-label">Поиск товара</label>
+            <input type="search" name="search" placeholder="Поиск:">
           </form>
           <a class="main-header-bookmarks" href="#">Закладки: 0</a>
           <a class="main-header-cart cart-full" href="#">Корзина: 10</a>
@@ -28,11 +31,13 @@
           <p class="header-contacts-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
-          <a class="user-link profile-link" href="#">Равшан Джамшутович</a>
-          <a class="user-link logout-link" href="#"><span class="visually-hidden">Выйти из профиля</span></a>
+          <div class="user-actions">
+            <a class="user-link profile-link" href="#">Равшан Джамшутович</a>
+            <a class="user-link logout-link" href="#"><span class="visually-hidden">Выйти из профиля</span></a>
+          </div>
           <ul class="user-navigation">
             <li><a class="user-navigation-link" href="#">Мои заказы</a></li>
-            <li><a class="user-navigation-link" href="#">Регистрация</a></li>
+            <li><a class="user-navigation-link" href="#">Личный кабинет</a></li>
           </ul>
         </div>
         <nav class="main-navigation">
@@ -72,9 +77,9 @@
               <input type="text" name="min-price" value="0"> &ndash;
               <input type="text" name="max-price" value="30000">
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group manufacturers-field">
               <legend class="filter-form-title">Производители:</legend>
-              <input type="checkbox" id="bosch" name="bosch" checked>
+              <input disabled type="checkbox" id="bosch" name="bosch" checked>
               <label for="bosch">Bosch</label>
               <input type="checkbox" id="interskol" name="interskol">
               <label for="interskol">Интерскол</label>
@@ -85,10 +90,10 @@
               <input type="checkbox" id="hitachi" name="hitachi">
               <label for="hitachi">Hitachi</label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group power-field">
               <legend class="filter-form-title">Питание:</legend>
-              <input type="radio" id="battery " name="power-type" value="battery" checked>
-              <label for="battery ">Аккумуляторные</label>
+              <input type="radio" id="battery" name="power-type" value="battery" checked>
+              <label for="battery">Аккумуляторные</label>
               <input type="radio" id="utility" name="power-type" value="utility">
               <label for="utility">Сетевые</label>
             </fieldset>
@@ -99,7 +104,7 @@
           <div class="sorting">
             <b class="sorting-title">Сортировка:</b>
             <ul class="sorting-list">
-              <li><a href="#">По цене</a></li>
+              <li><a class="active-type-of-sort" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
             </ul>
@@ -265,7 +270,7 @@
           </div>
           <p class="footer-feedback">
             <span>Обратная связь:</span>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru<a>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-feedback">
             <span>Разработано &ndash;</span>
@@ -276,7 +281,7 @@
     </footer>
     <div class="add-to-cart">
       <p class="add-to-cart-title">Товар добавлен в корзину!</p>
-      <div class="user-actions">
+      <div class="user-order-actions">
         <a class="btn place-order-link" href="#">Оформить заказ</a>
         <a class="btn contnue-shopping-link">Продолжить покупки</a>
       </div>
