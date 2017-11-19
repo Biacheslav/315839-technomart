@@ -13,8 +13,8 @@
         <div class="container">
           <a class="logo" href="index.html"><img src="img/logo.png" alt="Техномарт"></a>
           <form class="main-header-search" method="get" action="echo.htmlacademy.ru">
-            <label class="search-label">Поиск товара</label>
             <input type="search" name="search" placeholder="Поиск:">
+            <label class="search-label"><span class="visually-hidden">Поиск товара</span></label>
           </form>
           <a class="main-header-bookmarks" href="#">Закладки: 0</a>
           <a class="main-header-cart cart-full" href="#">Корзина: 10</a>
@@ -74,8 +74,8 @@
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
               </div>
-              <input type="text" name="min-price" value="0"> &ndash;
-              <input type="text" name="max-price" value="30000">
+              <input class="min-price" type="text" name="min-price" value="0"> &ndash;
+              <input class="max-price" type="text" name="max-price" value="30000">
             </fieldset>
             <fieldset class="catalog-filter-group manufacturers-field">
               <legend class="filter-form-title">Производители:</legend>

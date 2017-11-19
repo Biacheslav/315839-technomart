@@ -31,7 +31,19 @@ ul {
 }
 
 .logo img {
-  border-bottom: 5px solid #b52933;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo:hover img,
+.logo:focus img {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.logo:active img {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .main-header-top {
@@ -47,19 +59,19 @@ ul {
   background-color: #293449;
 }
 
-.main-header-search input::-webkit-input-placeholder {
+.main-header-search ::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.main-header-search input:-moz-placeholder { /* Firefox 18- */
+.main-header-search :-moz-placeholder { /* Firefox 18- */
   color: #ffffff;
 }
 
-.main-header-search input::-moz-placeholder {  /* Firefox 19+ */
+.main-header-search ::-moz-placeholder {  /* Firefox 19+ */
   color: #ffffff;
 }
 
-.main-header-search input:-ms-input-placeholder {
+.main-header-search :-ms-input-placeholder {
   color: #ffffff;
 }
 
@@ -75,21 +87,25 @@ ul {
   /*Не разобрался как реализовать*/
 }
 
-.main-header-search input[name="search"]:hover {
+.search-field:hover {
   background-color: #212a3a;
+}
+
+.search-field:focus {
+  color: #000000;
+  background-color: #ffffff ;
 }
 
 .main-header-bookmarks:hover,
-.main-header-cart:hover {
+.main-header-bookmarks:focus,
+.main-header-cart:hover,
+.main-header-cart:focus {
   background-color: #212a3a;
 }
 
-.main-header-order:hover {
+.main-header-order:hover,
+.main-header-order:focus {
   background-color: #5fbb2d;
-}
-
-.logo:hover {
-  /*Не разобрался как реализовать*/
 }
 
 .main-header-bookmarks:active,
@@ -103,10 +119,6 @@ ul {
   background-color: #518534;
 }
 
-.main-header-search input[name="search"]:focus {
-  color: #000000;
-  background-color: #ffffff ;
-}
 /*Средняя часть шапки*/
 .main-header-title {
   font-size: 16px;
@@ -135,7 +147,8 @@ ul {
   background-color: #ffffff;
 }
 
-.user-block-btn:hover {
+.user-block-btn:hover,
+.user-block-btn:focus {
   color: #ee3643;
 }
 
@@ -153,7 +166,8 @@ ul {
   color: #ffffff;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   background-color: #293449;
 }
 
@@ -176,7 +190,8 @@ ul {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.features-item-btn:hover {
+.features-item-btn:hover,
+.features-item-btn:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -207,16 +222,15 @@ ul {
 .slider-item:nth-of-type(1) {
   background-image: url("../img/man-1.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.slider-item:nth-last-of-type(2) {
+.slider-item:nth-of-type(2) {
   background-image: url("../img/man-2.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.slider-item .slider-title {
+.slider-title {
   font-size: 36px;
   line-height: 30px;
   /*font-weight: bold;*/
@@ -236,7 +250,9 @@ ul {
 }
 
 .slider-item-btn:hover,
-.popular-btn:hover {
+.slider-item-btn:focus,
+.popular-btn:hover,
+.popular-btn:focus {
   background-color: #ca2c37;
 }
 
@@ -292,7 +308,7 @@ ul {
 }
 
 .popular-item-action {
-  /*display: none;*/
+  display: none;
 }
 
 .buy-btn {
@@ -304,7 +320,8 @@ ul {
   background-color: #63a63e;
 }
 
-.buy-btn:hover {
+.buy-btn:hover,
+.buy-btn:focus {
   background-color: #5fbb2d;
 }
 
@@ -323,7 +340,8 @@ ul {
 
 }
 
-.bookmarks-btn:hover {
+.bookmarks-btn:hover,
+.bookmarks-btn:focus {
   box-shadow: 0 0 0 3px #32425c;
 }
 
@@ -332,28 +350,33 @@ ul {
   box-shadow: 0 0 0 3px #c1c6ce;
 }
 
-.popular-item:hover {
-  /*Спросить, как при наведении можно менять стили нескольких объектов*/
-  /*Спросить, как подбирать параметры для тени используя данные фотошопа*/
-  box-shadow: 0 10px 50px -20px #293449;
+.popular-item:hover,
+.popular-item:focus {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
-.popular-item:hover .popular-item-image  {
-  /*display: none;*/
+.popular-item:hover .popular-item-image,
+.popular-item:focus .popular-item-image   {
+  display: none;
 }
 
-.popular-item:hover .popular-item-action  {
-  /*display: block;*/
+.popular-item:hover .popular-item-action,
+.popular-item:focus .popular-item-action  {
+  display: block;
 }
 
 /*Стили для раздела с популярными производителями*/
-.manufacturers-list-item:hover {
-  box-shadow: 0 10px 50px -20px #293449;
+.manufacturers-list-item:hover,
+.manufacturers-list-item:focus {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-list-item:active img {
+  opacity: 0.3;
 }
 
 .manufacturers-list-item:active {
-  box-shadow: 0 10px 50px -20px #293449;
-  opacity: 0.3;
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 /*Стили для блока сервисы*/
@@ -376,12 +399,14 @@ ul {
   background-color: #32425c;
 }
 
-.services-control-active {
+.services-control-title.active {
   color: #32425c;
   background-color: #ffffff;
+  pointer-events: none;
 }
 
-.services-control-title:hover {
+.services-control-title:hover,
+.services-control-title:focus {
   color: #ffffff;
   background-color: #293449;
 }
@@ -416,7 +441,9 @@ ul {
 }
 
 .about-btn:hover,
-.about-contacts-btn:hover {
+.about-btn:focus,
+.about-contacts-btn:hover,
+.about-contacts-btn:focus {
   background-color: #ca2c37;
 }
 
@@ -446,7 +473,8 @@ ul {
   color: #ffffff;
 }
 
-.footer-navigation-top a:hover {
+.footer-navigation-top a:hover,
+.footer-navigation-top a:focus {
   border-bottom: 2px solid #ffffff
 }
 
@@ -454,7 +482,8 @@ ul {
   color: #ffd180;
 }
 
-.footer-navigation-bottom a:hover {
+.footer-navigation-bottom a:hover,
+.footer-navigation-bottom a:focus {
   border-bottom: 2px solid #ffd180;
 }
 
@@ -483,6 +512,7 @@ ul {
 }
 
 .social-btn:hover,
+.social-btn:focus,
 .social-btn:active {
   background-color: #ee3643;
 }
@@ -497,7 +527,8 @@ ul {
   color: #ffd180;
 }
 
-.footer-feedback a:hover {
+.footer-feedback a:hover,
+.footer-feedback a:focus {
   border-bottom: 2px solid #ffd180;
 }
 
@@ -510,9 +541,8 @@ ul {
 .popup-form {
   font-size: 18px;
   line-height: 18px;
-  box-shadow:
-    0 10px 50px -10px #293449,
-    0 -7px 0 0 #ee3643;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 .name-field,
@@ -531,28 +561,28 @@ ul {
   color: #a9a9a9;
 }
 
-.popup-form input::-webkit-input-placeholder {
+.popup-form ::-webkit-input-placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.popup-form input:-moz-placeholder { /* Firefox 18- */
+.popup-form :-moz-placeholder { /* Firefox 18- */
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.popup-form input::-moz-placeholder {  /* Firefox 19+ */
+.popup-form ::-moz-placeholder {  /* Firefox 19+ */
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
-.popup-form input:-ms-input-placeholder {
+.popup-form :-ms-input-placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -565,7 +595,8 @@ ul {
   background-color: #ee3643;
 }
 
-.popup-form-btn:hover {
+.popup-form-btn:hover,
+.popup-form-btn:focus {
   background-color: #ca2c37;
 }
 
@@ -584,7 +615,8 @@ ul {
   background-color: #ffffff;
 }
 
-.user-actions:hover {
+.user-actions:hover,
+.user-actions:focus {
 
 }
 
@@ -609,7 +641,8 @@ ul {
   border-bottom: 2px solid #32425c;
 }
 
-.user-navigation-link:hover {
+.user-navigation-link:hover,
+.user-navigation-link:focus {
   color: #ee4d59;
   border-bottom: 2px solid #ee4d59;
 }
@@ -664,7 +697,8 @@ ul {
   background-color: #f7f3ec;
 }
 
-input[name *="price"] {
+.min-price,
+.max-price {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17;
   line-height: 18px;
@@ -709,15 +743,17 @@ input[name *="price"] {
   color: #b6b3ae;
   /*В макете у подчеркивания - маленькие квадраты,
   можно этого добиться с помощью css? dashed не годится*/
-  border-bottom: 2px dotted #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-list .active-type-of-sort {
   color: #ee3643;
   border: none;
+  pointer-events: none;
 }
 
-.sorting-list a:hover {
+.sorting-list a:hover,
+.sorting-list a:focus {
   color: #000000;
   border-bottom: 2px solid #ee3643;
 }
@@ -748,21 +784,24 @@ input[name *="price"] {
 }
 
 .goods-item-action {
-  /*display: none;*/
+  display: none;
 }
 
-.goods-item:hover {
+.goods-item:hover,
+.goods-item:focus {
   /*Спросить, как при наведении можно менять стили нескольких объектов*/
   /*Спросить, как подбирать параметры для тени используя данные фотошопа*/
-  box-shadow: 0 10px 50px -20px #293449;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
-.goods-item:hover .goods-item-image  {
-  /*display: none;*/
+.goods-item:hover .goods-item-image,
+.goods-item:focus .goods-item-image  {
+  display: none;
 }
 
-.goods-item:hover .goods-item-action  {
-  /*display: block;*/
+.goods-item:hover .goods-item-action,
+.goods-item:focus .goods-item-action  {
+  display: block;
 }
 
 /*Стили для пагинатора*/
@@ -781,6 +820,7 @@ input[name *="price"] {
 .current-page {
   border: 2px solid #ee3643;
   background-color: #ee3643;
+  pointer-events: none;
 }
 
 .current-page a {
@@ -789,16 +829,9 @@ input[name *="price"] {
 
 /*Эти стили я добавил потому что у активной страницы другие стили,
 и при наведении или нажатии результат получается некорректный*/
-.paginator-item:hover {
+.paginator-item:hover,
+.paginator-item:focus {
   border: 2px solid #bdc6ca;
-}
-
-.current-page:hover {
-  background-color: #ffffff;
-}
-
-.current-page:hover a {
-  color: #000000;
 }
 
 .paginator-item:active {
@@ -817,9 +850,8 @@ input[name *="price"] {
 
 /*Стили для уведомления о добавлении товара в корзину*/
 .add-to-cart {
-  box-shadow:
-    0 10px 50px -10px #293449,
-    0 -7px 0 0 #ee3643;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
 }
 
 .add-to-cart-title {
@@ -834,6 +866,15 @@ input[name *="price"] {
 .place-order-link {
   border-radius: 2px;
   background-color: #ee3643;
+}
+
+.place-order-link:hover,
+.place-order-link:focus {
+  background-color: #ca2c37;
+}
+
+.place-order-link:active {
+  background-color: #ba2732;
 }
 
 .contnue-shopping-link {
