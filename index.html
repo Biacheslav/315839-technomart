@@ -52,40 +52,38 @@
     <main>
       <div class="container">
         <section class="features">
-          <div class="features-flex-left">
-            <div class="features-item materials">
-              <h3 class="features-item-title">Материалы</h3>
-              <a href="#" class="btn features-item-btn">На любой вкус</a>
+          <div class="features-item materials">
+            <h3 class="features-item-title">Материалы</h3>
+            <a href="#" class="btn features-item-btn">На любой вкус</a>
+          </div>
+          <div class="features-item instruments">
+            <h3 class="features-item-title">Инструменты</h3>
+            <a href="#" class="btn features-item-btn">На все случаи</a>
+          </div>
+          <div class="features-item technics">
+            <h3 class="features-item-title">Техника</h3>
+            <a href="#" class="btn features-item-btn">Для стройки</a>
+          </div>
+          <div class="features-slider">
+            <!-- Закомментировал один слайд, чтоб не рушить сетку -->
+            <input type="radio" name="slider-element" id="first-features-slider">
+            <!-- <input type="radio" name="slider-element" id="second-features-slider"> -->
+            <div class="slider-item">
+              <b class="slider-title">Перфораторы</b>
+              <p>Настоящие мужские игрушки</p>
+              <a class="btn slider-item-btn" href="#">Открыть каталог</a>
             </div>
-            <div class="features-item instruments">
-              <h3 class="features-item-title">Инструменты</h3>
-              <a href="#" class="btn features-item-btn">На все случаи</a>
-            </div>
-            <div class="features-slider">
-              <!-- Закомментировал один слайд, чтоб не рушить сетку -->
-              <input type="radio" name="slider-element" id="first-features-slider">
-              <!-- <input type="radio" name="slider-element" id="second-features-slider"> -->
-              <div class="slider-item">
-                <b class="slider-title">Перфораторы</b>
-                <p>Настоящие мужские игрушки</p>
-                <a class="btn slider-item-btn" href="#">Открыть каталог</a>
-              </div>
-              <!-- <div class="slider-item">
-                <b class="slider-title">Дрели</b>
-                <p>Соседям на радость!</p>
-                <a class="btn slider-item-btn" href="#">Открыть каталог</a>
-              </div> -->
-              <div class="features-slider-controls">
-                <label for="first-features-slider"></label>
-                <!-- <label for="second-features-slider"></label> -->
-              </div>
+            <!-- <div class="slider-item">
+              <b class="slider-title">Дрели</b>
+              <p>Соседям на радость!</p>
+              <a class="btn slider-item-btn" href="#">Открыть каталог</a>
+            </div> -->
+            <div class="features-slider-controls">
+              <label for="first-features-slider"></label>
+              <!-- <label for="second-features-slider"></label> -->
             </div>
           </div>
-          <div class="features-flex-right">
-            <div class="features-item technics">
-              <h3 class="features-item-title">Техника</h3>
-              <a href="#" class="btn features-item-btn">Для стройки</a>
-            </div>
+          <div class="features-flex-container">
             <div class="features-item discounts">
               <h3 class="features-item-title">Скидки 50%</h3>
               <a href="#" class="btn features-item-btn">На 350 товаров</a>
@@ -96,7 +94,7 @@
             </div>
           </div>
         </section>
-        <section class="popular">
+        <section class="popular popular-goods">
           <div class="popular-header">
             <h2 class="popular-title">Популярные товары:</h2>
             <a class="btn popular-btn" href="#">Все популярные товары</a>
@@ -156,35 +154,35 @@
           <div class="manufacturers">
             <ul class="manufacturers-list">
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/bosch.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/bosch.png" width="220" height="145"
                 alt="Производитель Bosch"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/makita.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/makita.png" width="220" height="145"
                 alt="Производитель Makita"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/dewalt.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/dewalt.png" width="220" height="145"
                 alt="Производитель Dewalt"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/interskol.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/interskol.png" width="220" height="145"
                 alt="Производитель Интерскол"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/hitachi.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/hitachi.png" width="220" height="145"
                 alt="Производитель Hitachi"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/lg.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/lg.png" width="220" height="145"
                 alt="Lg"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/aeg.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/aeg.png" width="220" height="145"
                 alt="Производитель Aeg"></a>
               </li>
               <li class="manufacturers-list-item">
-                <a href="#"><img src="img/metabo.png" width="220" height="145"
+                <a class="manufacturers-list-item-logo" href="#"><img src="img/metabo.png" width="220" height="145"
                 alt="Производитель Metabo"></a>
               </li>
             </ul>

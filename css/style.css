@@ -3,7 +3,6 @@
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
-html,
 body {
   min-width: 960px;
 }
@@ -184,12 +183,15 @@ ul {
 /*Средняя часть шапки*/
 .main-header-top + .container {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
+  /*Для чего был добавлен перенос?*/
+  flex-wrap: wrap;
 }
 
 .main-header-middle {
   display: flex;
   justify-content: space-between;
+  width: 940px;
   margin-bottom: 39px;
 }
 
@@ -262,6 +264,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 940px;
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
@@ -298,33 +301,26 @@ ul {
 /*Стили для раздела с услугами и товарами*/
 .features {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 53px;
 }
 
-.features-flex-left {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 620px;
-}
-
-.features-slider {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.features-flex-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 300px;
-}
-
 .features-item {
+  width: 300px;
   /*Временный размер*/
   min-height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
+.features-item:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.features-flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .features .features-item-title {
@@ -374,8 +370,9 @@ ul {
 }
 
 .features-slider {
+  width: 620px;
   min-height: 266px;
-  margin-top: 20px;
+  margin-right: 20px;
   background-image: url("../img/man-1.jpg");
   /*background-image: url("../img/man-2.jpg");*/
   background-repeat: no-repeat;
@@ -425,9 +422,14 @@ ul {
 }
 
 /*Стили для раздела с популярными товарами*/
+.popular-goods {
+  margin-bottom: 21px;
+}
+
 .popular-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   padding: 25px;
   background-color: #f9f5f0;
@@ -435,7 +437,7 @@ ul {
 
 .popular-item-container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .popular-title {
@@ -457,7 +459,12 @@ ul {
   width: 220px;
   /*Высота временная*/
   min-height: 318px;
+  margin-right: 20px;
   border: 1px solid #eaeaea;
+}
+
+.popular-item:nth-of-type(4n+4) {
+  margin-right: 0;
 }
 
 .popular-item,
@@ -534,6 +541,7 @@ ul {
 .popular-item:hover,
 .popular-item:focus {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  border: 1px solid #fff;
 }
 
 .popular-item:hover .popular-item-image,
@@ -550,44 +558,50 @@ ul {
 .manufacturers-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .manufacturers-list-item {
-  /*При масштабировании рамки отображаются некорректно (пропадают по
-  какой-либо из сторон. Это нормально?)*/
-  border: 1px solid #eaeaea;
-}
-
-.manufacturers-list-item:nth-of-type(-n+4) {
+  /*При масштабировании рамки отображаются некорректно
+  (пропадают снизу. Это нормально?)*/
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.manufacturers-list-item a {
+.manufacturers-list-item:nth-of-type(n+4) {
+  margin-bottom: 0;
+}
+
+.manufacturers-list-item:nth-of-type(4n+4) {
+  margin-right: 0;
+}
+
+.manufacturers-list-item-logo {
   display: block;
   width: 220px;
   height: 145px;
+  border: 1px solid #eaeaea;
 }
 
-.manufacturers-list-item:hover,
-.manufacturers-list-item:focus {
+.manufacturers-list-item-logo:hover,
+.manufacturers-list-item-logo:focus {
   /*Поскольку ссылка интерактивный элемент, то стили для фокуса
   задаются ссылкам. А как тогда при наведении на ссылку менять стили обертки?
   Пока сделал стили при наведении и фокусе для обертки (что не совсем корректно)*/
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-  border: none;
+  border: 1px solid #fff;
 }
 
-.manufacturers-list-item:active img {
+.manufacturers-list-item-logo:active img {
   opacity: 0.3;
 }
 
-.manufacturers-list-item:active {
+.manufacturers-list-item-logo:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-  border: none;
+  border: 1px solid #fff;
 }
 
 .popular-manufacturers {
@@ -1331,7 +1345,7 @@ ul {
 /*Стили для товаров*/
 .goods-item-container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   flex-wrap: wrap;
   margin-bottom: 52px;
 }
@@ -1349,12 +1363,17 @@ ul {
   width: 220px;
   /*Высота временная*/
   min-height: 318px;
+  margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
 }
 
 .goods-item:nth-of-type(n+7) {
   margin-bottom: 0;
+}
+
+.goods-item:nth-of-type(3n+3) {
+  margin-right: 0;
 }
 
 .goods-item-title span {
