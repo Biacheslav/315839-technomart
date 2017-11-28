@@ -15,6 +15,9 @@
           <form class="main-header-search" method="get" action="echo.htmlacademy.ru">
             <input class="search-field" type="search" name="search" placeholder="Поиск:">
             <label class="search-label"><span class="visually-hidden">Поиск товара</span></label>
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+            </svg>
           </form>
           <a class="main-header-bookmarks" href="#">Закладки: 0</a>
           <a class="main-header-cart" href="#">Корзина: 0</a>
@@ -32,7 +35,11 @@
             <p class="header-contacts-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <ul class="user-block index-user-block">
-            <li><a class="user-block-btn auth" href="#">Войти</a></li>
+            <li><a class="user-block-btn auth" href="#">
+              <svg class="auth-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+              </svg>
+              Войти</a></li>
             <li><a class="user-block-btn registration">Регистрация</a></li>
           </ul>
         </div>
@@ -67,7 +74,7 @@
           <div class="features-slider">
             <!-- Закомментировал один слайд, чтоб не рушить сетку -->
             <input type="radio" name="slider-element" id="first-features-slider">
-            <!-- <input type="radio" name="slider-element" id="second-features-slider"> -->
+            <input type="radio" name="slider-element" id="second-features-slider">
             <div class="slider-item">
               <b class="slider-title">Перфораторы</b>
               <p>Настоящие мужские игрушки</p>
@@ -80,7 +87,7 @@
             </div> -->
             <div class="features-slider-controls">
               <label for="first-features-slider"></label>
-              <!-- <label for="second-features-slider"></label> -->
+              <label for="second-features-slider"></label>
             </div>
           </div>
           <div class="features-flex-container">
@@ -195,32 +202,34 @@
           <p class="slogan">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-slider">
-            <input type="radio" name="service" id="first-services-slider">
-            <input type="radio" name="service" id="second-services-slider">
-            <input type="radio" name="service" id="third-services-slider">
+            <input type="radio" name="service" id="first-services-slider" class="delivery-radio" checked>
+            <input type="radio" name="service" id="second-services-slider" class="guarantee-radio">
+            <input type="radio" name="service" id="third-services-slider" class="credit-radio">
             <div class="services-slider-controls">
-              <label class="services-control-title active" for="first-services-slider">Доставка</label>
-              <label class="services-control-title" for="second-services-slider">Гарантия</label>
-              <label class="services-control-title"for="third-services-slider">Кредит</label>
+              <label class="services-control-title delivery-control active" for="first-services-slider">Доставка</label>
+              <label class="services-control-title guarantee-control" for="second-services-slider">Гарантия</label>
+              <label class="services-control-title credit-control" for="third-services-slider">Кредит</label>
             </div>
-            <div class="services-slider-item delivery-item">
-              <b class="services-slider-title">Доставка</b>
-              <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,
-              поднимая его на ваш этаж!</p>
-            </div>
-            <div class="services-slider-item guarantee-item">
-              <b class="services-slider-title">Гарантия</b>
-              <p>Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгоранием,
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-              сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-            </div>
-            <div class="services-slider-item credit-item">
-              <b class="services-slider-title">Кредит</b>
-              <p>Залезть в долговую яму стало проще!
-              Кредитные консультанты придут вам на помощь.</p>
+            <div class="services-slider-wrapper">
+              <div class="services-slider-item delivery-item">
+                <b class="services-slider-title">Доставка</b>
+                <p>Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!</p>
+              </div>
+              <div class="services-slider-item guarantee-item">
+                <b class="services-slider-title">Гарантия</b>
+                <p>Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="services-slider-item credit-item">
+                <b class="services-slider-title">Кредит</b>
+                <p>Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -283,9 +292,21 @@
           Все права защищены</p>
           <div class="footer-social">
             <ul class="social-list">
-              <li><a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Мы вконтакте</span></a></li>
-              <li><a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Мы в фейсбук</span></a></li>
-              <li><a class="social-btn social-btn-inst" href="#"><span class="visually-hidden">Мы в инстаграм</span></a></li>
+              <li><a class="social-btn social-btn-vk" href="#">
+                <svg class="vk-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+                  <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+                </svg>
+                <span class="visually-hidden">Мы вконтакте</span></a></li>
+              <li><a class="social-btn social-btn-fb" href="#">
+                <svg class="fb-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                </svg>
+                <span class="visually-hidden">Мы в фейсбук</span></a></li>
+              <li><a class="social-btn social-btn-inst" href="#">
+                <svg class="insta-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                  <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+                </svg>
+                <span class="visually-hidden">Мы в инстаграм</span></a></li>
             </ul>
           </div>
           <p class="footer-feedback feedback-email">
@@ -300,13 +321,23 @@
       </section>
     </footer>
     <form class="popup-form" method="post" action="echo.htmlacademy.ru">
-      <label class="name-field-title" for="user-name">Ваше имя:</label>
-      <input class="name-field" type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста">
-      <label class="email-field-title" for="user-email">Ваш e-mail:</label>
-      <input class="email-field" type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
-      <label class="message-area-title" for="message">Текст письма:</label>
-      <textarea class="message-area" name="message" id="message">В свободной форме</textarea>
-      <button class="btn popup-form-btn" type="submit">Отправить</button>
+      <div class="popup-flex-wrapper">
+        <p class="popup-form-item">
+          <label class="name-field-title" for="user-name">Ваше имя:</label>
+          <input class="name-field" type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="popup-form-item">
+          <label class="email-field-title" for="user-email">Ваш e-mail:</label>
+          <input class="email-field" type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
+        </p>
+        <p class="popup-form-item">
+          <label class="message-area-title" for="message">Текст письма:</label>
+          <textarea class="message-area" name="message" id="message" cols="63" rows="6">В свободной форме</textarea>
+        </p>
+      </div>
+      <div class="popup-bottom">
+        <button class="btn popup-form-btn" type="submit">Отправить</button>
+      </div>
     </form>
     <div class="modal-map">
       <img src="img/full-map.jpg" alt="Офис располагается по адресу ул. Б. Конюшенная, д. 19/8" width="940" height="446">
