@@ -36,14 +36,20 @@
           </div>
           <div class="user-actions-container">
             <div class="user-block catalog-user-block">
-              <div class="user-actions">
-                <a class="user-link profile-link" href="#">Равшан Джамшутович</a>
-                <a class="user-link logout-link" href="#"><span class="visually-hidden">Выйти из профиля</span></a>
-              </div>
+              <a class="user-link profile-link" href="#">
+                <svg class="profile-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                  <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+                </svg>
+                Равшан Джамшутович</a>
+              <a class="user-link logout-link" href="#">
+                <svg class="logout-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+                  <g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
+                </svg>
+                <span class="visually-hidden">Выйти из профиля</span></a>
             </div>
             <ul class="user-navigation">
-              <li><a class="user-navigation-link" href="#">Мои заказы</a></li>
-              <li><a class="user-navigation-link" href="#">Личный кабинет</a></li>
+              <li class="user-navigation-item"><a class="user-navigation-link" href="#">Мои заказы</a></li>
+              <li class="user-navigation-item"><a class="user-navigation-link" href="#">Личный кабинет</a></li>
             </ul>
           </div>
         </div>
@@ -64,10 +70,14 @@
       <div class="container">
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
-            <li><a class="homepage" href="index.html"><span class="visually-hidden">Главная страница</span></a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a class="current">Перфораторы</a></li>
+            <li class="breadcrumbs-list-item"><a class="homepage" href="index.html"><span class="visually-hidden">Главная страница</span>
+              <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
+                <g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g>
+              </svg>
+            </a></li>
+            <li class="breadcrumbs-list-item"><a href="#">Каталог</a></li>
+            <li class="breadcrumbs-list-item"><a href="#">Инструмент</a></li>
+            <li class="breadcrumbs-list-item"><a class="current">Перфораторы</a></li>
           </ul>
         </div>
         <h2 class="block-title">Перфораторы</h2>
@@ -78,9 +88,19 @@
               <fieldset class="catalog-filter-group price-field">
                 <legend class="filter-form-title">Цена:</legend>
                 <div class="bar">
-                  <div class="range"></div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="range">
+                    <img src="img/price-line.png" width="180" height="2" alt="Диапазон цен">
+                  </div>
+                  <div class="toggle toggle-min">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                      <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                    </svg>
+                  </div>
+                  <div class="toggle toggle-max">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                      <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+                    </svg>
+                  </div>
                 </div>
                 <div class="price-range">
                   <input class="min-price" type="text" name="min-price" value="0"> &ndash;
@@ -91,24 +111,24 @@
                 <legend class="filter-form-title">Производители:</legend>
                 <div class="manufacturers-field-container">
                   <p class="manufacturers-field-item">
-                    <input disabled type="checkbox" id="bosch" name="bosch" checked>
-                    <label for="bosch">Bosch</label>
+                    <input type="checkbox" class="visually-hidden" id="bosch" name="bosch" checked>
+                    <label class="manufacturers-item-title" for="bosch">Bosch</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" id="interskol" name="interskol">
-                    <label for="interskol">Интерскол</label>
+                    <input type="checkbox" class="visually-hidden" id="interskol" name="interskol">
+                    <label class="manufacturers-item-title" for="interskol">Интерскол</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" id="makita" name="makita" checked>
-                    <label for="makita">Makita</label>
+                    <input type="checkbox" class="visually-hidden" id="makita" name="makita" checked>
+                    <label class="manufacturers-item-title" for="makita">Makita</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" id="dewalt" name="dewalt">
-                    <label for="dewalt">Dewalt</label>
+                    <input type="checkbox" class="visually-hidden" id="dewalt" name="dewalt">
+                    <label class="manufacturers-item-title" for="dewalt">Dewalt</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" id="hitachi" name="hitachi">
-                    <label for="hitachi">Hitachi</label>
+                    <input type="checkbox" class="visually-hidden" id="hitachi" name="hitachi">
+                    <label class="manufacturers-item-title" for="hitachi">Hitachi</label>
                   </p>
                 </div>
               </fieldset>
@@ -116,12 +136,12 @@
                 <legend class="filter-form-title">Питание:</legend>
                 <div class="power-field-container">
                   <p class="power-field-item">
-                    <input type="radio" id="battery" name="power-type" value="battery" checked>
-                    <label for="battery">Аккумуляторные</label>
+                    <input type="radio" class="visually-hidden" id="battery" name="power-type" value="battery" checked>
+                    <label class="power-item-title" for="battery">Аккумуляторные</label>
                   </p>
                   <p class="power-field-item">
-                    <input type="radio" id="utility" name="power-type" value="utility">
-                    <label for="utility">Сетевые</label>
+                    <input type="radio" class="visually-hidden" id="utility" name="power-type" value="utility">
+                    <label class="power-item-title" for="utility">Сетевые</label>
                   </p>
                 </div>
               </fieldset>
@@ -137,8 +157,16 @@
                 <li><a href="#">По функционалу</a></li>
               </ul>
               <div class="sorting-arrows">
-                <a class="sorting-arrow sorting-arrow-up" href="#"><span class="visually-hidden">Товары по возрастанию</span></a>
-                <a class="sorting-arrow sorting-arrow-down" href="#"><span class="visually-hidden">Товары по убыванию</span></a>
+                <a class="sorting-arrow sorting-arrow-up active-arrow" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                  <span class="visually-hidden">Товары по возрастанию</span></a>
+                <a class="sorting-arrow sorting-arrow-down" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 10L0 0h11"/>
+                  </svg>
+                  <span class="visually-hidden">Товары по убыванию</span></a>
               </div>
             </div>
             <div class="goods-item-container">
@@ -164,7 +192,7 @@
                   <a class="btn bookmarks-btn" href="#">В закладки</a>
                 </div>
               </article>
-              <article class="goods-item">
+              <article class="goods-item new-item">
                 <a href="#" class="goods-item-image"><img src="img/bfg2000.png" width="220" height="160"
                 alt="Перфоратор BOSCH BFG 2000"></a>
                 <a href="#" class="goods-item-title">Перфоратор <span>Bosch BFG 2000</span></a>
@@ -186,7 +214,7 @@
                   <a class="btn bookmarks-btn" href="#">В закладки</a>
                 </div>
               </article>
-              <article class="goods-item">
+              <article class="goods-item new-item">
                 <a href="#" class="goods-item-image"><img src="img/bfg6000.png" width="220" height="160"
                 alt="Перфоратор BOSCH BFG 6000"></a>
                 <a href="#" class="goods-item-title">Перфоратор <span>Bosch BFG 6000</span></a>
@@ -208,7 +236,7 @@
                   <a class="btn bookmarks-btn" href="#">В закладки</a>
                 </div>
               </article>
-              <article class="goods-item">
+              <article class="goods-item new-item">
                 <a href="#" class="goods-item-image"><img src="img/bfg3000.png" width="220" height="160"
                 alt="Перфоратор BOSCH BFG 3000"></a>
                 <a href="#" class="goods-item-title">Перфоратор <span>Bosch BFG 3000</span></a>
@@ -277,7 +305,7 @@
             <ul class="footer-navigation-top">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="#">Каталог</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -292,13 +320,25 @@
       </section>
       <section class="footer-bottom">
         <div class="container">
-          <p class="copyright">© 2010-2017 Компания "Техномарт"
+          <p class="copyright">&copy; 2010-2017 Компания "Техномарт"
           Все права защищены</p>
           <div class="footer-social">
             <ul class="social-list">
-              <li><a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Мы вконтакте</span></a></li>
-              <li><a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Мы в фейсбук</span></a></li>
-              <li><a class="social-btn social-btn-inst" href="#"><span class="visually-hidden">Мы в инстаграм</span></a></li>
+              <li><a class="social-btn social-btn-vk" href="#">
+                <svg class="vk-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+                  <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+                </svg>
+                <span class="visually-hidden">Мы вконтакте</span></a></li>
+              <li><a class="social-btn social-btn-fb" href="#">
+                <svg class="fb-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                </svg>
+                <span class="visually-hidden">Мы в фейсбук</span></a></li>
+              <li><a class="social-btn social-btn-inst" href="#">
+                <svg class="insta-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                  <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+                </svg>
+                <span class="visually-hidden">Мы в инстаграм</span></a></li>
             </ul>
           </div>
           <p class="footer-feedback feedback-email">
@@ -316,7 +356,7 @@
       <p class="add-to-cart-title">Товар добавлен в корзину!</p>
       <div class="user-order-actions">
         <a class="btn place-order-link" href="#">Оформить заказ</a>
-        <a class="btn contnue-shopping-link">Продолжить покупки</a>
+        <a class="btn continue-shopping-link">Продолжить покупки</a>
       </div>
     </div>
   </body>

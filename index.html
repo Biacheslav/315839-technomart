@@ -72,22 +72,25 @@
             <a href="#" class="btn features-item-btn">Для стройки</a>
           </div>
           <div class="features-slider">
-            <!-- Закомментировал один слайд, чтоб не рушить сетку -->
-            <input type="radio" name="slider-element" id="first-features-slider">
-            <input type="radio" name="slider-element" id="second-features-slider">
-            <div class="slider-item">
-              <b class="slider-title">Перфораторы</b>
-              <p>Настоящие мужские игрушки</p>
-              <a class="btn slider-item-btn" href="#">Открыть каталог</a>
-            </div>
-            <!-- <div class="slider-item">
-              <b class="slider-title">Дрели</b>
-              <p>Соседям на радость!</p>
-              <a class="btn slider-item-btn" href="#">Открыть каталог</a>
-            </div> -->
+            <input type="radio" class="visually-hidden" name="slider-element" id="first-features-slider" checked>
+            <input type="radio" class="visually-hidden" name="slider-element" id="second-features-slider">
             <div class="features-slider-controls">
-              <label for="first-features-slider"></label>
-              <label for="second-features-slider"></label>
+              <label class="slider-control first-slider-control" for="first-features-slider"></label>
+              <label class="slider-control second-slider-control" for="second-features-slider"></label>
+            </div>
+            <label class="arrow-control first-arrow-control" for="first-features-slider"></label>
+            <label class="arrow-control second-arrow-control" for="second-features-slider"></label>
+            <div class="slider-list">
+              <div class="slider-item">
+                <b class="slider-title">Перфораторы</b>
+                <p>Настоящие мужские игрушки</p>
+                <a class="btn slider-item-btn" href="#">Открыть каталог</a>
+              </div>
+              <div class="slider-item">
+                <b class="slider-title">Дрели</b>
+                <p>Соседям на радость!</p>
+                <a class="btn slider-item-btn" href="#">Открыть каталог</a>
+              </div>
             </div>
           </div>
           <div class="features-flex-container">
@@ -140,7 +143,7 @@
                 <a class="btn bookmarks-btn" href="#">В закладки</a>
               </div>
             </article>
-            <article class="popular-item">
+            <article class="popular-item new-item">
               <a href="#" class="popular-item-image"><img src="img/bfg2000.png" width="220" height="160"
               alt="Перфоратор BOSCH BFG 2000"></a>
               <a href="#" class="popular-item-title">Перфоратор <span>Bosch BFG 2000</span></a>
