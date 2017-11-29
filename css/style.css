@@ -1920,10 +1920,6 @@ input[type="radio"].visually-hidden {
   background-color: #f7f3ec;
 }
 
-.range img {
-  display: block;
-}
-
 .range {
   position: absolute;
   top: 50%;
