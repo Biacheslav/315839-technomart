@@ -1922,6 +1922,8 @@ input[type="radio"].visually-hidden {
 
 .range {
   position: absolute;
+  width: 180px;
+  height: 2px;
   top: 50%;
   margin-top: -1px;
   left: 50%;
