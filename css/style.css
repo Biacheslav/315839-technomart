@@ -2527,6 +2527,10 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
+/*.place-order-link:active {
+  background-color: #ba2732;
+}*/
+
 .continue-shopping-link {
   padding-left: 44px;
   padding-right: 48px;
