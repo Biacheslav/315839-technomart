@@ -8,8 +8,9 @@ var buyLink = document.querySelectorAll(".buy-btn"),
 index, btn;
 var buyWindow = document.querySelector(".add-to-cart");
 var cartClose = document.querySelector(".cart-close");
-var username = document.querySelector("[name=user-name]");
-var useremail = document.querySelector("[name=user-email]");
+var userName = document.querySelector("[name=user-name]");
+var userEmail = document.querySelector("[name=user-email]");
+var userMessage = document.querySelector("[name=message]");
 
 if (mapLink) {
   mapLink.addEventListener("click", function(evt) {
@@ -34,8 +35,10 @@ if (writeLink) {
 
 if (writeForm) {
   writeForm.addEventListener("submit", function (evt) {
-  if (!username.value || !useremail.value) {
+  if (!userName.value || !userEmail.value || !userEmail.value) {
   evt.preventDefault();
+  writeForm.classList.remove("modal-error");
+  writeForm.offsetWidth = writeForm.offsetWidth;
   writeForm.classList.add("modal-error");
   }
   });
