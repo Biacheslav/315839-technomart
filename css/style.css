@@ -1483,6 +1483,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts span {
   display: block;
   padding-left: 4px;
+  padding-right: 45px;
 }
 
 .footer-navigation {
@@ -2256,7 +2257,15 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.manufacturers-control {
+  display: none;
+}
+
 .manufacturers-item-title:hover::before {
+  border: 2px solid #b5b5b5;
+}
+
+.manufacturers-control:focus + .manufacturers-item-title::before {
   border: 2px solid #b5b5b5;
 }
 
@@ -2334,7 +2343,15 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.power-control {
+  display: none;
+}
+
 .power-item-title:hover::before {
+  border-color: #b5b5b5;
+}
+
+.power-control:focus + .power-item-title::before {
   border-color: #b5b5b5;
 }
 

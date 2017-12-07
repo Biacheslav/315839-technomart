@@ -6,7 +6,7 @@
     <title>HTML Academy: Каталог товаров</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header catalog-main-header">
@@ -103,23 +103,23 @@
                 <legend class="filter-form-title">Производители:</legend>
                 <div class="manufacturers-field-container">
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" class="visually-hidden" id="bosch" name="bosch" checked>
+                    <input type="checkbox" class="manufacturers-control" id="bosch" name="bosch" checked>
                     <label class="manufacturers-item-title" for="bosch">Bosch</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" class="visually-hidden" id="interskol" name="interskol">
+                    <input type="checkbox" class="manufacturers-control" id="interskol" name="interskol">
                     <label class="manufacturers-item-title" for="interskol">Интерскол</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" class="visually-hidden" id="makita" name="makita" checked>
+                    <input type="checkbox" class="manufacturers-control" id="makita" name="makita" checked>
                     <label class="manufacturers-item-title" for="makita">Makita</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" class="visually-hidden" id="dewalt" name="dewalt">
+                    <input type="checkbox" class="manufacturers-control" id="dewalt" name="dewalt">
                     <label class="manufacturers-item-title" for="dewalt">Dewalt</label>
                   </p>
                   <p class="manufacturers-field-item">
-                    <input type="checkbox" class="visually-hidden" id="hitachi" name="hitachi">
+                    <input type="checkbox" class="manufacturers-control" id="hitachi" name="hitachi">
                     <label class="manufacturers-item-title" for="hitachi">Hitachi</label>
                   </p>
                 </div>
@@ -128,11 +128,11 @@
                 <legend class="filter-form-title">Питание:</legend>
                 <div class="power-field-container">
                   <p class="power-field-item">
-                    <input type="radio" class="visually-hidden" id="battery" name="power-type" value="battery" checked>
+                    <input type="radio" class="power-control" id="battery" name="power-type" value="battery" checked>
                     <label class="power-item-title" for="battery">Аккумуляторные</label>
                   </p>
                   <p class="power-field-item">
-                    <input type="radio" class="visually-hidden" id="utility" name="power-type" value="utility">
+                    <input type="radio" class="power-control" id="utility" name="power-type" value="utility">
                     <label class="power-item-title" for="utility">Сетевые</label>
                   </p>
                 </div>
@@ -276,13 +276,13 @@
           <h2 class="block-title">пара слов о перфораторах</h2>
           <p>Перфоратор &ndash; универсальный строительный инструмент.
             Предназначен для сверления и долбления отверстий в кирпиче,
-            бетоне и камне.</p>
-          <p>Существуют электромеханические и
-          пневматические перфораторы. Современные модели могут
-          выполнять функции дрели, шуруповерта, и отбойного молотка.
-          В ассортиментном ряду есть выбор "трехрежимников":
-          в одном устройстве будут совмещены отбойный молоток и
-          ударная дрель.</p>
+            бетоне и камне.<br>
+            Существуют электромеханические и
+            пневматические перфораторы. Современные модели могут
+            выполнять функции дрели, шуруповерта, и отбойного молотка.
+            В ассортиментном ряду есть выбор "трехрежимников":
+            в одном устройстве будут совмещены отбойный молоток и
+            ударная дрель.</p>
         </div>
       </section>
     </main>
@@ -290,7 +290,7 @@
       <section class="footer-top">
         <div class="container">
           <p class="footer-contacts">
-            <a class="logo"><img src="img/footer-logo.png" alt="Техномарт" width="220" height="63"></a>
+            <a class="logo" href="index.html"><img src="img/footer-logo.png" alt="Техномарт" width="220" height="63"></a>
             <span>
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7 (812) 555-05-55
