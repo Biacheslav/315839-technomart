@@ -707,15 +707,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-#first-features-slider:checked ~ .slider-list .slider-item:nth-of-type(1) {
+.first-features-control:checked ~ .slider-list .slider-item:nth-of-type(1) {
   display: block;
 }
 
-#second-features-slider:checked ~ .slider-list .slider-item:nth-of-type(2) {
+.second-features-control:checked ~ .slider-list .slider-item:nth-of-type(2) {
   display: block;
 }
 
-#first-features-slider:checked ~ .features-slider-controls .first-slider-control::before {
+.first-features-control:checked ~ .features-slider-controls .first-slider-control::before {
   position: absolute;
   z-index: 2;
   top: 2px;
@@ -727,7 +727,7 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
-#second-features-slider:checked ~ .features-slider-controls .second-slider-control::before {
+.second-features-control:checked ~ .features-slider-controls .second-slider-control::before {
   position: absolute;
   z-index: 2;
   top: 2px;
@@ -1868,6 +1868,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 0;
   top: 0;
+  width: 940px;
+  height: 446px;
+  border: 0;
 }
 
 /*.modal-map::before,
@@ -2875,4 +2878,3 @@ input[type="radio"].visually-hidden {
 .add-to-cart::before {
   transform: rotate(45deg);
 }*/
-}
