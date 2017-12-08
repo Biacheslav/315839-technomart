@@ -1253,6 +1253,21 @@ input[type="radio"].visually-hidden {
   /*pointer-events: none;*/
 
 /*Почему-то для неконтекстного селектора не срабатывает*/
+.delivery-radio:focus ~ .services-slider-controls .delivery-control {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.guarantee-radio:focus ~ .services-slider-controls .guarantee-control {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.credit-radio:focus ~ .services-slider-controls .credit-control {
+  color: #ffffff;
+  background-color: #293449;
+}
+
 .delivery-radio:checked ~ .services-slider-wrapper .delivery-item {
   position: relative;
   display: block;
@@ -1344,21 +1359,6 @@ input[type="radio"].visually-hidden {
 }
 
 .services-control-title:hover {
-  color: #ffffff;
-  background-color: #293449;
-}
-
-.delivery-radio:focus ~ .services-slider-controls .delivery-control {
-  color: #ffffff;
-  background-color: #293449;
-}
-
-.guarantee-radio:focus ~ .services-slider-controls .guarantee-control {
-  color: #ffffff;
-  background-color: #293449;
-}
-
-.credit-radio:focus ~ .services-slider-controls .credit-control {
   color: #ffffff;
   background-color: #293449;
 }
